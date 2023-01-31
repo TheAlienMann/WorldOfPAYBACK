@@ -11,6 +11,18 @@
 		49B1764C2989B749007ED99F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1764B2989B749007ED99F /* ContentView.swift */; };
 		49B1764E2989B755007ED99F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B1764D2989B755007ED99F /* Assets.xcassets */; };
 		49B176512989B755007ED99F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B176502989B755007ED99F /* Preview Assets.xcassets */; };
+		49B1765B2989BA3D007ED99F /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1765A2989BA3D007ED99F /* NetworkReachability.swift */; };
+		49B176602989BA75007ED99F /* NetworkServince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1765F2989BA75007ED99F /* NetworkServince.swift */; };
+		49B176642989BAD1007ED99F /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176632989BAD1007ED99F /* TransactionViewModel.swift */; };
+		49B176682989BB08007ED99F /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176672989BB08007ED99F /* TransactionsModel.swift */; };
+		49B1766F2989BB73007ED99F /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 49B1766E2989BB73007ED99F /* PBTransactions.json */; };
+		49B176732989BBB4007ED99F /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176722989BBB4007ED99F /* TransactionView.swift */; };
+		49B176762989BBD9007ED99F /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176752989BBD9007ED99F /* TransactionDetailView.swift */; };
+		49B176792989BC32007ED99F /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176782989BC32007ED99F /* CustomMenu.swift */; };
+		49B1767C2989BC64007ED99F /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1767B2989BC64007ED99F /* FloatingActionButton.swift */; };
+		49B1767F2989BC90007ED99F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1767E2989BC90007ED99F /* HomeView.swift */; };
+		49B176822989BCB7007ED99F /* NoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176812989BCB7007ED99F /* NoNetworkView.swift */; };
+		49B176862989BD7C007ED99F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176852989BD7C007ED99F /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,18 @@
 		49B1764D2989B755007ED99F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B176502989B755007ED99F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49B176522989B755007ED99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B1765A2989BA3D007ED99F /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		49B1765F2989BA75007ED99F /* NetworkServince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServince.swift; sourceTree = "<group>"; };
+		49B176632989BAD1007ED99F /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		49B176672989BB08007ED99F /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		49B1766E2989BB73007ED99F /* PBTransactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
+		49B176722989BBB4007ED99F /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		49B176752989BBD9007ED99F /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		49B176782989BC32007ED99F /* CustomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenu.swift; sourceTree = "<group>"; };
+		49B1767B2989BC64007ED99F /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		49B1767E2989BC90007ED99F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		49B176812989BCB7007ED99F /* NoNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkView.swift; sourceTree = "<group>"; };
+		49B176852989BD7C007ED99F /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +77,11 @@
 			isa = PBXGroup;
 			children = (
 				49B176492989B749007ED99F /* WorldOfPAYBACKApp.swift */,
-				49B1764B2989B749007ED99F /* ContentView.swift */,
-				49B1764D2989B755007ED99F /* Assets.xcassets */,
-				49B176522989B755007ED99F /* Info.plist */,
+				49B176662989BAFB007ED99F /* Models */,
+				49B1766B2989BB3F007ED99F /* Views */,
+				49B176592989BA30007ED99F /* ViewModels */,
+				49B1765E2989BA6B007ED99F /* Services */,
+				49B1766D2989BB4E007ED99F /* SupportingFiles */,
 				49B1764F2989B755007ED99F /* Preview Content */,
 			);
 			path = WorldOfPAYBACK;
@@ -67,6 +93,56 @@
 				49B176502989B755007ED99F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49B176592989BA30007ED99F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				49B1765A2989BA3D007ED99F /* NetworkReachability.swift */,
+				49B176632989BAD1007ED99F /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		49B1765E2989BA6B007ED99F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				49B1765F2989BA75007ED99F /* NetworkServince.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		49B176662989BAFB007ED99F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B176672989BB08007ED99F /* TransactionsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49B1766B2989BB3F007ED99F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49B1764B2989B749007ED99F /* ContentView.swift */,
+				49B176722989BBB4007ED99F /* TransactionView.swift */,
+				49B176752989BBD9007ED99F /* TransactionDetailView.swift */,
+				49B176782989BC32007ED99F /* CustomMenu.swift */,
+				49B1767B2989BC64007ED99F /* FloatingActionButton.swift */,
+				49B1767E2989BC90007ED99F /* HomeView.swift */,
+				49B176812989BCB7007ED99F /* NoNetworkView.swift */,
+				49B176852989BD7C007ED99F /* ToastView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49B1766D2989BB4E007ED99F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				49B1764D2989B755007ED99F /* Assets.xcassets */,
+				49B176522989B755007ED99F /* Info.plist */,
+				49B1766E2989BB73007ED99F /* PBTransactions.json */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B176512989B755007ED99F /* Preview Assets.xcassets in Resources */,
+				49B1766F2989BB73007ED99F /* PBTransactions.json in Resources */,
 				49B1764E2989B755007ED99F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +215,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B176792989BC32007ED99F /* CustomMenu.swift in Sources */,
 				49B1764C2989B749007ED99F /* ContentView.swift in Sources */,
+				49B176602989BA75007ED99F /* NetworkServince.swift in Sources */,
+				49B176762989BBD9007ED99F /* TransactionDetailView.swift in Sources */,
 				49B1764A2989B749007ED99F /* WorldOfPAYBACKApp.swift in Sources */,
+				49B1767F2989BC90007ED99F /* HomeView.swift in Sources */,
+				49B1765B2989BA3D007ED99F /* NetworkReachability.swift in Sources */,
+				49B176862989BD7C007ED99F /* ToastView.swift in Sources */,
+				49B176682989BB08007ED99F /* TransactionsModel.swift in Sources */,
+				49B176822989BCB7007ED99F /* NoNetworkView.swift in Sources */,
+				49B1767C2989BC64007ED99F /* FloatingActionButton.swift in Sources */,
+				49B176732989BBB4007ED99F /* TransactionView.swift in Sources */,
+				49B176642989BAD1007ED99F /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
+				INFOPLIST_FILE = WorldOfPAYBACK/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WorldOfPAYBACK/Info.plist;
+				INFOPLIST_FILE = WorldOfPAYBACK/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

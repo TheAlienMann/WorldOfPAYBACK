@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WorldOfPAYBACKApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var networkReachability = NetworkReachability()
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(networkReachability)
     }
+  }
 }
