@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
-  @StateObject var itemsViewModel = ItemsViewModel()
-  @State var isMenuOpen = false
+  @StateObject var transactionsViewModel: TransactionsViewModel
+  @State var isMenuOpen: Bool = false
   @State var toast: ToastModel? = nil
   
   var body: some View {
     ZStack {
       ScrollView {
-        ForEach(itemsViewModel.filterredTransactions, id: \.id) { items in
+        ForEach(transactionsViewModel.filterredTransactions, id: \.id) { items in
           HStack(alignment: .center) {
             NavigationLink(destination: TransactionDetailView(transaction: items)) {
               TransactionView(bookingDate: items.transactionDetail.bookingDate.toString(),
@@ -28,20 +28,20 @@ struct HomeView: View {
         }
       }
       .onAppear {
-        itemsViewModel.filterredTransactions = itemsViewModel.items
+        transactionsViewModel.filterredTransactions = transactionsViewModel.items
       }
       .disabled(isMenuOpen ? true : false)
       ZStack {
         VStack {
           Spacer()
-          ForEach(1..<itemsViewModel.numberOfCategories + 1) { categoryNumber in
+          ForEach(1..<transactionsViewModel.numberOfCategories + 1) { categoryNumber in
             ZStack {
               VStack {
                 HStack {
                   Spacer()
                   Button {
                     isMenuOpen = false
-                    self.itemsViewModel.filterredTransactions = itemsViewModel.sortTransactions().filter { item in
+                    self.transactionsViewModel.filterredTransactions = transactionsViewModel.sortTransactions().filter { item in
                       item.category.rawValue == categoryNumber
                     }
                   } label: {
@@ -74,7 +74,7 @@ struct HomeView: View {
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
         Button {
-          itemsViewModel.filterredTransactions = itemsViewModel.items
+          transactionsViewModel.filterredTransactions = transactionsViewModel.items
         } label: {
           Image(systemName: "arrow.counterclockwise.circle")
         }
@@ -82,14 +82,14 @@ struct HomeView: View {
       
       ToolbarItem(placement: .navigationBarLeading) {
         Button {
-          itemsViewModel.filterredTransactions = itemsViewModel.sortTransactions()
+          transactionsViewModel.filterredTransactions = transactionsViewModel.sortTransactions()
         } label: {
           Image(systemName: "arrow.up.arrow.down.circle")
         }
       }
       ToolbarItem(placement: .bottomBar) {
         Button { } label: {
-          Text("The Sum of Value is: \(itemsViewModel.filterredTransactions.map(\.transactionDetail.value.amount).reduce(0, +))")
+          Text("The Sum of Value is: \(transactionsViewModel.filterredTransactions.map(\.transactionDetail.value.amount).reduce(0, +))")
         }
       }
     }

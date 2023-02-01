@@ -1,5 +1,5 @@
 //
-//  TransactionViewModel.swift
+//  TransactionsViewModel.swift
 //  WorldOfPAYBACK
 //
 //  Created by Mohamad Rahmani on 01.02.23.
@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class ItemsViewModel: ObservableObject {
+final class TransactionsViewModel: ObservableObject {
   @Published var items: [Item] = []
   lazy var numberOfCategories: Int = {
     Categories.allCases.count

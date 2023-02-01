@@ -9,19 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
   @EnvironmentObject var networkReachability: NetworkReachability
+  @StateObject var transactionsViewModel: TransactionsViewModel
   @State var toast: ToastModel? = nil
   
   var body: some View {
     NavigationView {
       VStack {
         if networkReachability.isConnected {
-          HomeView()
+          HomeView(transactionsViewModel: TransactionsViewModel())
         } else {
           NoNetworkView()
         }
       }
-      .onChange(of: networkReachability.isConnected) {_ in
-        toast = ToastModel(type: .info, title: "Internet Connection", message: "You lost your Connection.")
+      .onChange(of: networkReachability.isConnected) { connected in
+        if connected {
+          toast = ToastModel(type: .success, title: "Internet Connection", message: "You are Connected.")
+        } else {
+          toast = ToastModel(type: .error, title: "Internet Connection", message: "You lost your Internet Connection.")
+        }
       }
       .toastView(toast: $toast, edge: .bottom)
     }
@@ -31,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(transactionsViewModel: TransactionsViewModel())
   }
 }

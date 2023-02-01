@@ -1,6 +1,8 @@
 # WorldOfPAYBACK
-![alt text](./Screenshots/1.png)
-![alt text](./Screenshots/2.png)
-![alt text](./Screenshots/3.png)
-![alt text](./Screenshots/4.png)
+<p float="left">
+<img src="./Screenshots/1.png" width="200">
+<img src="./Screenshots/2.png" width="200">
+<img src="./Screenshots/3.png" width="200">
+<img src="./Screenshots/4.png" width="200">
+</p>
 

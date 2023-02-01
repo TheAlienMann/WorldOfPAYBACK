@@ -13,7 +13,7 @@
 		49B176512989B755007ED99F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B176502989B755007ED99F /* Preview Assets.xcassets */; };
 		49B1765B2989BA3D007ED99F /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1765A2989BA3D007ED99F /* NetworkReachability.swift */; };
 		49B176602989BA75007ED99F /* NetworkServince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1765F2989BA75007ED99F /* NetworkServince.swift */; };
-		49B176642989BAD1007ED99F /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176632989BAD1007ED99F /* TransactionViewModel.swift */; };
+		49B176642989BAD1007ED99F /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176632989BAD1007ED99F /* TransactionsViewModel.swift */; };
 		49B176682989BB08007ED99F /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176672989BB08007ED99F /* TransactionsModel.swift */; };
 		49B1766F2989BB73007ED99F /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 49B1766E2989BB73007ED99F /* PBTransactions.json */; };
 		49B176732989BBB4007ED99F /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176722989BBB4007ED99F /* TransactionView.swift */; };
@@ -34,7 +34,7 @@
 		49B176522989B755007ED99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B1765A2989BA3D007ED99F /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		49B1765F2989BA75007ED99F /* NetworkServince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServince.swift; sourceTree = "<group>"; };
-		49B176632989BAD1007ED99F /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		49B176632989BAD1007ED99F /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
 		49B176672989BB08007ED99F /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
 		49B1766E2989BB73007ED99F /* PBTransactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
 		49B176722989BBB4007ED99F /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				49B1765A2989BA3D007ED99F /* NetworkReachability.swift */,
-				49B176632989BAD1007ED99F /* TransactionViewModel.swift */,
+				49B176632989BAD1007ED99F /* TransactionsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 				49B176822989BCB7007ED99F /* NoNetworkView.swift in Sources */,
 				49B1767C2989BC64007ED99F /* FloatingActionButton.swift in Sources */,
 				49B176732989BBB4007ED99F /* TransactionView.swift in Sources */,
-				49B176642989BAD1007ED99F /* TransactionViewModel.swift in Sources */,
+				49B176642989BAD1007ED99F /* TransactionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

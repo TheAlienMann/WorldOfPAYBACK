@@ -13,7 +13,7 @@ struct WorldOfPAYBACKApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      ContentView(transactionsViewModel: TransactionsViewModel())
         .environmentObject(networkReachability)
     }
   }
