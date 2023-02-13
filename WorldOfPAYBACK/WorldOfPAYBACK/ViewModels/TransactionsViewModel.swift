@@ -50,7 +50,7 @@ final class TransactionsViewModel: ObservableObject {
   
   func sumOfFilterredTransactions(category: Categories) -> Int {
     switch category {
-      case .categoryOne, .categoryTwo, .categoryThree:
+      case .categoryOne, .categoryTwo, .categoryThree, .categoryFour:
         return filterTransaction(by: category.rawValue).map(\.transactionDetail.value.amount).reduce(0, +)
     }
   }

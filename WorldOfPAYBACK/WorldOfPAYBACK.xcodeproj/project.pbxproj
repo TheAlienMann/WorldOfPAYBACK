@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49204737298D194D003AFB3D /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49204736298D194D003AFB3D /* WorldOfPAYBACKTests.swift */; };
 		493E82B7298A7E2D00D64817 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 493E82B9298A7E2D00D64817 /* Localizable.strings */; };
 		49B1764A2989B749007ED99F /* WorldOfPAYBACKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176492989B749007ED99F /* WorldOfPAYBACKApp.swift */; };
 		49B1764C2989B749007ED99F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1764B2989B749007ED99F /* ContentView.swift */; };
@@ -26,7 +27,20 @@
 		49B176862989BD7C007ED99F /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B176852989BD7C007ED99F /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49204739298D194D003AFB3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B1763E2989B748007ED99F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49B176452989B749007ED99F;
+			remoteInfo = WorldOfPAYBACK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		49204734298D194D003AFB3D /* WorldOfPAYBACKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49204736298D194D003AFB3D /* WorldOfPAYBACKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKTests.swift; sourceTree = "<group>"; };
+		49204738298D194D003AFB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493E82B8298A7E2D00D64817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		493E82BB298A7E3900D64817 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		49B176462989B749007ED99F /* WorldOfPAYBACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPAYBACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49204731298D194D003AFB3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B176432989B749007ED99F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,10 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49204735298D194D003AFB3D /* WorldOfPAYBACKTests */ = {
+			isa = PBXGroup;
+			children = (
+				49204736298D194D003AFB3D /* WorldOfPAYBACKTests.swift */,
+				49204738298D194D003AFB3D /* Info.plist */,
+			);
+			path = WorldOfPAYBACKTests;
+			sourceTree = "<group>";
+		};
 		49B1763D2989B748007ED99F = {
 			isa = PBXGroup;
 			children = (
 				49B176482989B749007ED99F /* WorldOfPAYBACK */,
+				49204735298D194D003AFB3D /* WorldOfPAYBACKTests */,
 				49B176472989B749007ED99F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				49B176462989B749007ED99F /* WorldOfPAYBACK.app */,
+				49204734298D194D003AFB3D /* WorldOfPAYBACKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +184,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49204733298D194D003AFB3D /* WorldOfPAYBACKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4920473D298D194D003AFB3D /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */;
+			buildPhases = (
+				49204730298D194D003AFB3D /* Sources */,
+				49204731298D194D003AFB3D /* Frameworks */,
+				49204732298D194D003AFB3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4920473A298D194D003AFB3D /* PBXTargetDependency */,
+			);
+			name = WorldOfPAYBACKTests;
+			productName = WorldOfPAYBACKTests;
+			productReference = 49204734298D194D003AFB3D /* WorldOfPAYBACKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49B176452989B749007ED99F /* WorldOfPAYBACK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B176552989B755007ED99F /* Build configuration list for PBXNativeTarget "WorldOfPAYBACK" */;
@@ -178,6 +228,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					49204733298D194D003AFB3D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 49B176452989B749007ED99F;
+					};
 					49B176452989B749007ED99F = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -198,11 +252,19 @@
 			projectRoot = "";
 			targets = (
 				49B176452989B749007ED99F /* WorldOfPAYBACK */,
+				49204733298D194D003AFB3D /* WorldOfPAYBACKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49204732298D194D003AFB3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B176442989B749007ED99F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49204730298D194D003AFB3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49204737298D194D003AFB3D /* WorldOfPAYBACKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49B176422989B749007ED99F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +309,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4920473A298D194D003AFB3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49B176452989B749007ED99F /* WorldOfPAYBACK */;
+			targetProxy = 49204739298D194D003AFB3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		493E82B9298A7E2D00D64817 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -252,6 +330,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4920473B298D194D003AFB3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldOfPAYBACKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheAlienMann.WorldOfPAYBACKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPAYBACK.app/WorldOfPAYBACK";
+			};
+			name = Debug;
+		};
+		4920473C298D194D003AFB3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WorldOfPAYBACKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheAlienMann.WorldOfPAYBACKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPAYBACK.app/WorldOfPAYBACK";
+			};
+			name = Release;
+		};
 		49B176532989B755007ED99F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4920473D298D194D003AFB3D /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4920473B298D194D003AFB3D /* Debug */,
+				4920473C298D194D003AFB3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49B176412989B748007ED99F /* Build configuration list for PBXProject "WorldOfPAYBACK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -16,6 +16,21 @@
       }
     },
     {
+      "partnerDisplayName" : "REWE Group",
+      "alias" : {
+        "reference" : "795357452000810"
+      },
+      "category" : 4,
+      "transactionDetail" : {
+        "description" : "PayBack",
+        "bookingDate" : "2022-07-23T10:59:05+0200",
+        "value" : {
+          "amount" : 124,
+          "currency" : "PBP"
+        }
+      }
+    },
+    {
       "partnerDisplayName" : "dm-dogerie markt",
       "alias" : {
         "reference" : "098193809705561"

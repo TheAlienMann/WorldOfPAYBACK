@@ -50,6 +50,7 @@ enum Categories: Int, Codable, CaseIterable, Identifiable {
   case categoryOne = 1
   case categoryTwo
   case categoryThree
+  case categoryFour
   
   var id: String { String(self.rawValue) }
 }
