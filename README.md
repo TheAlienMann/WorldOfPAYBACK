@@ -8,7 +8,7 @@
 
 * Via the floating button at the bottom right, Menu, you can filter the data ("category" key.).
 
-* I will filter additional data if you just add the "category" key to the `enum` in `TransactionModel`.
+* It will filter additional data if you just add the "category" key to the `enum` in `TransactionModel`.
 
 * Sum of the Values is show at the bottom, which will change when you choose a different category in the menu.
 
